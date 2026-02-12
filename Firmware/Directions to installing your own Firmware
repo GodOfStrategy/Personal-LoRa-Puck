@@ -1,0 +1,66 @@
+** # Directions to installing your own Firmware **
+Follow the following steps to ensure your board is recognised:
+1. Install the Latest Version of Arduino IDE.
+2. Open Arduino IDE → File → Preferences:
+   In Additional Board Manager URLs, add "https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json"
+   Go to Tools → Board → Board Manager.
+   Search for RP2040 and install “Raspberry Pi RP2040 Boards by Earle Philhower”.
+3. Open File Explorer and go to - "C:\Users\<Your Name>\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\5.4.4\variants" **(place your PC's username in place of "<Your Name>")**
+4. Create your custom variant in .../variants/, create a new folder: "myboard".(instead of "myboard" enter a name that you like)
+   Inside "myboard", create pins_arduino.h (you can copy and paste the file from a surrounding board file and edit it) and paste this:
+" #pragma once
+
+// ===== LED =====
+#define PIN_LED         25
+#ifndef LED_BUILTIN
+#define LED_BUILTIN     PIN_LED
+#endif
+
+// ===== UART =====
+#define PIN_SERIAL_TX   0     // USB/UART TX
+#define PIN_SERIAL_RX   1     // USB/UART RX
+
+// ===== I2C =====
+#define PIN_WIRE_SDA    8
+#define PIN_WIRE_SCL    9
+
+// ===== SPI (LoRa SX1262) =====
+#define PIN_SPI_SCK     2
+#define PIN_SPI_MOSI    3
+#define PIN_SPI_MISO    4
+#define PIN_LORA_NSS    5     // Chip select
+#define PIN_LORA_DIO1   6
+#define PIN_LORA_BUSY   7
+#define PIN_LORA_RESET  22
+
+// ===== RF switch =====
+#define PIN_RF_SWITCH   10
+
+// ===== ADC =====
+#define PIN_A0          26
+#define PIN_A1          27
+#define PIN_A2          28
+
+// ===== Debug pins =====
+#define PIN_SWCLK       24
+#define PIN_SWDIO       25
+
+// ===== Default interfaces =====
+#define SERIAL_PORT_MONITOR   Serial
+#define SERIAL_PORT_HARDWARE  Serial1 "
+
+** #( Important Note: You have to check your scheamtic and enter the corresponding pin numbers, I have added these according to mine, if you are not sure about your pin numbers you may attach a screenshot of your scheamtics to AI and ask it for the pin numbers. )**
+5. Find the "boards file in 'C:\Users\<Your Name>\AppData\Local\Arduino15\packages\rp2040\hardware\rp2040\5.4.4\'" **(place your PC's username in place of "<Your Name>")**
+   Then paste this at the very end **DO NOT ERASE ANYTHING ELSE**: 
+"
+loraboard.name=<Your Name>
+loraboard.build.core=rp2040
+loraboard.build.variant=lora_board
+loraboard.upload.maximum_size=2097152
+loraboard.upload.maximum_data_size=262144
+loraboard.upload.protocol=rp2040
+loraboard.build.f_cpu=133000000L
+loraboard.build.usb_product="RP2040 LoRa Board"
+loraboard.build.usb_manufacturer="<Your Name>"
+" **(place your desired name(s) in place of "<Your Name>")**
+6. Close and open Arduino IDE, then go to tools -> Board -> Raspberry Pi Pico /RP2040 -> find your board and Upload your sketch!
