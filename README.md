@@ -18,5 +18,7 @@ Here is the Schematic:
 
 Here is the PCB:
 <img width="623" height="786" alt="image" src="https://github.com/user-attachments/assets/54997f9b-bf0b-4fe4-bd0e-05921ab4bb52" />
+Here is the assembled PCB:
+<img width="662" height="744" alt="Screenshot 2026-02-23 230443" src="https://github.com/user-attachments/assets/9e56010f-b640-4186-b306-a089a497afa0" />
 
 You can find the BOM and Firmware in my repo.
