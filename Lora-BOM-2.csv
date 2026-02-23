@@ -1,0 +1,31 @@
+Reference,Qty,Value,DNP,Exclude from BOM,Price ($),Footprint,Datasheet
+AE1,1,Antenna,,,4.53,Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical,~
+"C1,C2",2,100 nf,,,0.091,Capacitor_SMD:C_0402_1005Metric,~
+C3,1,47 nF,,,0.114,Capacitor_SMD:C_0402_1005Metric,~
+"C4,C5",2,47 pF,,,0.024,Capacitor_SMD:C_0402_1005Metric,~
+C6,1,1 nF,,,0.024,Capacitor_SMD:C_0402_1005Metric,~
+"C7,C21",2,1 uF,,,0.044,Capacitor_SMD:C_0402_1005Metric,~
+"C8,C9,C11,C12,C13,C14,C15,C22,C23",9,100 nF,,,0.091,Capacitor_SMD:C_0402_1005Metric,~
+C10,1,100 nF (C8 - C14),,,0.024,Capacitor_SMD:C_0402_1005Metric,~
+"C16,C17",2,10 uF,,,0.2508,Capacitor_SMD:C_0402_1005Metric,~
+C18,1,39 pF,,,0.024,Capacitor_SMD:C_0402_1005Metric,~
+"C19,C20",2,3.3 pF,,,0.324,Capacitor_SMD:C_0402_1005Metric,~
+FB1,1,BLM15AX102SN1D,,,0.118,Inductor_SMD:L_0402_1005Metric,~
+J1,1,USB_C_Receptacle_USB2.0_16P,,,5.088,Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV,https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+L1,1,15uH,,,0.136,Inductor_SMD:L_0402_1005Metric,~
+L2,1,47 nH,,,0.1737,Inductor_SMD:L_0402_1005Metric,~
+L3,1,9.1 nH,,,0.074,Inductor_SMD:L_0402_1005Metric,~
+R1,1,100,,,0.012,Resistor_SMD:R_0402_1005Metric,~
+"R2,R3",2,27.4,,,0.064,Resistor_SMD:R_0402_1005Metric,~
+R4,1,10k,,,0.012,Resistor_SMD:R_0402_1005Metric,~
+R5,1,1k,,,0.012,Resistor_SMD:R_0402_1005Metric,~
+"R6,R7",2,5.1 k,,,0.008,Resistor_SMD:R_0402_1005Metric,~
+SW2,1,BOOTSEL,,,3.39,Button_Switch_SMD:SW_SPST_PTS647_Sx70,~
+SW3,1,RESET,,,,Button_Switch_SMD:SW_SPST_PTS647_Sx70,~
+U1,1,SX1262IMLTRT,,,16.4875,Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm,https://semtech.file.force.com/sfc/dist/version/download/?oid=00DE0000000JelG&ids=0682R00000IjPWSQA3&d=%2Fa%2F2R000000Un7F%2FyT.fKdAr9ZAo3cJLc4F2cBdUsMftpT2vsOICP7NmvMo
+U2,1,RP2040,,,4.827,Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm,https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf
+U3,1,PE4259,,,3.0815,Package_TO_SOT_SMD:SOT-363_SC-70-6,https://lcsc.com/datasheet/lcsc_datasheet_2409301504_pSemi-PE4259-63_C470892.pdf
+U4,1,0900FM15D0039E,,,9.62`,RF_Converter:Balun_Johanson_0900FM15K0039,0900FM15D0039E
+U5,1,12 MHz,,,1.231,Package_SO:SOIC-8_5.3x5.3mm_P1.27mm,https://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf
+U6,1,AP2112K-3.3,,,0.6714,Package_TO_SOT_SMD:SOT-23-5,https://www.diodes.com/assets/Datasheets/AP2112.pdf
+Y1,1,32MHz,,,1.405,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,~
