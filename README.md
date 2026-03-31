@@ -22,4 +22,4 @@ Here is the PCB:
 
 Here is the assembled PCB:
 <img width="662" height="744" alt="Screenshot 2026-02-23 230443" src="https://github.com/user-attachments/assets/df6a3701-a0f3-47b6-b476-b36ba233deb1" />
-Please find the BOM and Firmware in my repo.
+Please find the BOM and Firmware along with a 3D STEP file for my assembled PCB in my repo.
