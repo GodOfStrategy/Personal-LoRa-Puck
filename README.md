@@ -14,12 +14,15 @@ My LoRa module uses Sub GHz frequencies to tranceive radio waves. It uses the fo
 10. USB-C Receptacle.
 
 Here is the Schematic:
-<img width="1075" height="729" alt="Screenshot 2026-02-12 192508" src="https://github.com/user-attachments/assets/fe38058c-e906-4644-981d-4340c6a179b8" />
+<img width="1086" height="733" alt="Screenshot 2026-04-15 194307" src="https://github.com/user-attachments/assets/4da38773-7bd5-4c5d-aa47-90e53d503b8b" />
+
 
 
 Here is the PCB:
-<img width="623" height="786" alt="Screenshot 2026-02-12 192539" src="https://github.com/user-attachments/assets/6d3f0246-24f6-4dba-b149-e072032e1a49" />
+<img width="1920" height="1020" alt="Screenshot 2026-04-15 192519" src="https://github.com/user-attachments/assets/9f4c0ebe-69f9-4099-acc9-b741a13f166a" />
+
 
 Here is the assembled PCB:
-<img width="662" height="744" alt="Screenshot 2026-02-23 230443" src="https://github.com/user-attachments/assets/df6a3701-a0f3-47b6-b476-b36ba233deb1" />
+<img width="578" height="742" alt="Screenshot 2026-04-15 194323" src="https://github.com/user-attachments/assets/8e71cee6-5110-4153-9107-d9d16bd7431e" />
+
 Please find the BOM and Firmware along with a 3D STEP file for my assembled PCB in my repo.
