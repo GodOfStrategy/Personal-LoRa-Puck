@@ -1,5 +1,6 @@
+
 # Personal-LoRa-Module
-A small compact module made to transmit and receive messages using sub gigahertzs frequencies of radio waves, for use in things such as automation, transmission, reception etc.
+A small compact module made to transmit and receive messages using sub gigahertzs frequencies of radio waves, for use in things such as automation, transmission, reception etc. I wanted to build this for a long time, because I want to implement noise pollution control using these modules, where one module will monitor honking >3 seconds and relay the information of the defaulter's vehicle to the receiver and fine the defaulter.
 
 My LoRa module uses Sub GHz frequencies to tranceive radio waves. It uses the following components:
 1. SX1262IMLTRT for transmission and reception.
@@ -25,4 +26,5 @@ Here is the PCB:
 Here is the assembled PCB:
 <img width="578" height="742" alt="Screenshot 2026-04-15 194323" src="https://github.com/user-attachments/assets/8e71cee6-5110-4153-9107-d9d16bd7431e" />
 
+[Lora-BOM-2.csv](https://github.com/user-attachments/files/28879576/Lora-BOM-2.csv)
 Please find the BOM and Firmware along with a 3D STEP file for my assembled PCB in my repo.
